@@ -3,7 +3,7 @@
 int main() {
 
 	int C, N, i, j;
-	int mean, num;
+    int mean, num;
 	int score[1001] = { 0 };
 	float rate;
 
@@ -23,11 +23,14 @@ int main() {
 			if (score[j] > mean)
 				num++;
 		}
+
 		rate = (float)num / N * 100;
-		printf("%.3f%%", rate);
+
+		printf("%.3f%%\n", rate);
+
+
 
 	}
 	return 0;
-
-
+	
 }
